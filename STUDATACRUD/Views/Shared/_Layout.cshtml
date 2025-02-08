@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - STUDATACRUD</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/STUDATACRUD.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800&display=swap" rel="stylesheet">
+
+  
+    
+
+   
+</head>
+<body>
+
+
+    <section class="header-nav">
+
+        <div class="container-fluid">
+
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark  bg-danger  rounded mt-3 shadow-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse  ">
+                        <ul class="navbar-nav flex-grow-1 text-uppercase   text-center mt-3">
+                            <li class="nav-item">
+                                <a class="nav-link  text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                           
+                            <li class="nav-item">
+                                <a class="nav-link text-light " asp-area="" asp-controller="Students" asp-action="index">Show Students</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="Students" asp-action="Add">Add Student</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+      
+    </section>
+    
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer text-muted text-center pb-2  ">
+        <div class="container shadow-lg ">
+            &copy; 2022 - Simple CRUD V.1
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

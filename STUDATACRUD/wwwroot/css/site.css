@@ -1,0 +1,46 @@
+
+*{
+    font-family:'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+}
+
+.nav-item {
+    margin-bottom: 10px;
+    margin-bottom: 15px;
+    float:right;
+}
+
+.nav-link {
+
+    font-size: 17px;
+    padding: 0 0 5px 0;
+    display: unset;
+    margin: 15px;
+}
+
+.nav-item a:hover {
+
+ 
+    font-weight:bold;
+}
+
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
